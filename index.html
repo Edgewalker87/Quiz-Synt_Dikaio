@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Συνταγματικό Δίκαιο</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="container header-container">
+    <h1>Συνταγματικό Δίκαιο</h1>
+    <div class="toolbar">
+      <span id="score">Score: 0</span>
+      <button id="toggle-dark">🌓 Dark Mode</button>
+      <button id="restart">🔁 Restart</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Quiz Container -->
+  <div class="container quiz-container">
+    <div id="question" class="question"></div>
+    <div id="answers" class="answers"></div>
+    <div id="result" class="result"></div>
+
+    <label class="auto-next-label">
+      <input type="checkbox" id="auto-next" checked />
+      Auto-Next
+    </label>
+
+    <button id="next" class="next-btn" disabled>Next Question</button>
+    <button id="review-btn" style="display:none; margin: 1rem auto 0 auto;">Review Incorrect Answers</button>
+  </div>
+
+  <!-- Review Container -->
+  <div class="container review-container" style="display: none;">
+    <h2>Review Incorrect Answers</h2>
+    <div id="review-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
